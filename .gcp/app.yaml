@@ -1,0 +1,44 @@
+# Google App Engine configuration for OpenAssess Backend
+runtime: python311
+
+env_variables:
+  DATABASE_URL: "postgresql://openassess:password@//cloudsql/PROJECT_ID:REGION:INSTANCE_NAME/openassess_db"
+  GOOGLE_API_KEY: "YOUR_GEMINI_API_KEY"
+  SECRET_KEY: "YOUR_SECRET_KEY"
+  SKILLSDROME_API_KEY: "YOUR_SKILLSDROME_API_KEY"
+  SKILLSDROME_API_URL: "https://api.skillsdrome.com/v1"
+
+# Cloud SQL connection
+beta_settings:
+  cloud_sql_instances: "PROJECT_ID:REGION:INSTANCE_NAME"
+
+# Automatic scaling
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
+  target_cpu_utilization: 0.6
+  target_throughput_utilization: 0.6
+
+# Resource limits
+resources:
+  cpu: 2
+  memory_gb: 4
+  disk_size_gb: 10
+
+# Health check
+health_check:
+  check_interval_sec: 30
+  timeout_sec: 10
+  failure_threshold: 3
+  success_threshold: 2
+
+# Handlers
+handlers:
+  - url: /static
+    static_dir: static
+  - url: /.*
+    script: auto
+
+# Runtime configuration
+runtime_config:
+  python_version: 3.11

@@ -1,0 +1,31 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+pydantic[email]
+python-jose[cryptography]
+bcrypt
+alembic
+google-genai
+httpx
+python-multipart
+reportlab
+PyPDF2
+PyMuPDF
+pytesseract
+qrcode
+pillow
+# Video Recording
+aiofiles
+# AI Anti-Cheat
+opencv-python-headless
+mediapipe
+numpy
+# Vector Database
+pgvector
+# Cloud Storage
+google-cloud-storage
+# Async support
+asyncpg

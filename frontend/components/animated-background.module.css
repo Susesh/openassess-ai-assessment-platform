@@ -1,0 +1,38 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  pointer-events: none;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.base {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.18), rgba(15, 23, 42, 0.82)),
+    linear-gradient(135deg, #172033 0%, #0f766e 48%, #1e293b 100%);
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.16;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.55) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.55) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(180deg, black, transparent 85%);
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 70% at 50% 30%, transparent 25%, rgba(2, 6, 23, 0.34) 100%),
+    linear-gradient(90deg, rgba(2, 6, 23, 0.35), transparent 45%, rgba(2, 6, 23, 0.25));
+}

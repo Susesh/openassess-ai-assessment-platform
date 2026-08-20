@@ -1,0 +1,21 @@
+{
+  "name": "openassess-main",
+  "version": "1.0.0",
+  "description": "OpenAssess is a comprehensive assessment platform that enables organizations to create, manage, and deliver adaptive quizzes with AI-powered feedback. The platform includes a complete admin portal for platform management.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikudupa73/openassess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/karthikudupa73/openassess/issues"
+  },
+  "homepage": "https://github.com/karthikudupa73/openassess#readme"
+}
